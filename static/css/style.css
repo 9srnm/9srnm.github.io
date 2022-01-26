@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,100&display=swap');
+
+@import "nullstyle.css";
+
+* {
+  font-family: Montserrat;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 60px;
+  color: #333;
+}
+
+body {
+background: rgb(255,238,255);
+background: -moz-linear-gradient(45deg, rgba(255,238,255,1) 0%, rgba(238,238,255,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(255,238,255,1) 0%, rgba(238,238,255,1) 100%);
+background: linear-gradient(45deg, rgba(255,238,255,1) 0%, rgba(238,238,255,1) 100%);
+}
+
+div.main{
+  width: 100%;
+}
+
+div.container {
+  width: 50%;
+  margin-left: 25%;
+}
+
+div.content {
+  width: 100%;
+  margin-top: 15%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+div.iam {
+  align-self: center;
+}
+
+h1 {
+  font-family: monospace;
+  font-style: normal;
+  margin: 5% 0;
+  position: relative;
+  background: #333;
+  color: #FFF;
+}
+
+h1::before, h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: #333;
+  animation: typewriter 2s ease 1s forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h3 {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 48px;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fade 1s ease forwards;
+}
+
+h5 {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  text-align: right;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fade 2s ease 3s forwards;
+}
+
+div.description {
+  margin-bottom: 3%;
+}
+
+div.btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+a.btn {
+  margin: 12px;
+  padding: 0px 24px 12px 24px;
+  border-radius: 30px;
+  background: rgb(102,51,102);
+  background: -moz-linear-gradient(225deg, rgba(102,51,102,1) 0%, rgba(51,51,102,1) 100%);
+  background: -webkit-linear-gradient(225deg, rgba(102,51,102,1) 0%, rgba(51,51,102,1) 100%);
+  background: linear-gradient(225deg, rgba(102,51,102,1) 0%, rgba(51,51,102,1) 100%);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fade 2s ease 3s forwards;
+}
+
+a.btn span {
+  color: #FFF;
+}
+
+a.btn_tr_bg {
+  margin: 12px;
+  padding: 0px 24px 12px 24px;
+  border: 2px solid rgb(102,51,102);
+  border-radius: 30px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fade 2s ease 3s forwards;
+}
+
+a:hover {
+  box-shadow: inset 6px 6px 12px rgb(0, 0, 0, 0.5);
+}
+
+span {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+}
