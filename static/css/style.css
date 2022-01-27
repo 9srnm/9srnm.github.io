@@ -58,7 +58,7 @@ h1::before, h1::after {
 
 h1::before {
   background: #333;
-  animation: typewriter 2s ease 1s forwards;
+  animation: typewriter 2s ease 2s forwards;
 }
 
 @keyframes typewriter {
@@ -80,7 +80,7 @@ h3 {
   font-size: 48px;
   opacity: 0;
   transform: translateY(-10px);
-  animation: fade 1s ease forwards;
+  animation: fade 1s ease 1s forwards;
 }
 
 h5 {
@@ -90,7 +90,7 @@ h5 {
   text-align: right;
   opacity: 0;
   transform: translateY(10px);
-  animation: fade 2s ease 3s forwards;
+  animation: fade 2s ease 4s forwards;
 }
 
 div.description {
@@ -114,7 +114,7 @@ a.btn {
   background: linear-gradient(225deg, rgba(102,51,102,1) 0%, rgba(51,51,102,1) 100%);
   opacity: 0;
   transform: translateY(10px);
-  animation: fade 2s ease 3s forwards;
+  animation: fade 2s ease 4s forwards;
 }
 
 a.btn span {
@@ -128,7 +128,7 @@ a.btn_tr_bg {
   border-radius: 30px;
   opacity: 0;
   transform: translateY(10px);
-  animation: fade 2s ease 3s forwards;
+  animation: fade 2s ease 4s forwards;
 }
 
 a:hover {
